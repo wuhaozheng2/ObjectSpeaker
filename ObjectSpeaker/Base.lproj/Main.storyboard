@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CameraVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CameraVC" customModule="ObjectRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fg2-D2-xVC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zo-Rz-ngy" customClass="CustomView" customModule="ObjectRecognizer" customModuleProvider="target">
+                                <rect key="frame" x="20" y="50" width="374" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qbJ-eK-wRB">
+                                        <rect key="frame" x="8" y="8" width="358" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击屏幕拍照识别" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="kos-OW-N0T">
+                                                <rect key="frame" x="109.66666666666667" y="0.0" width="138.66666666666663" height="27.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.88369160889999998" green="0.0" blue="0.0087899250690000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西理比赛专用" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebD-k1-qUB">
+                                                <rect key="frame" x="148.33333333333334" y="27.666666666666671" width="61.333333333333343" height="16.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qbJ-eK-wRB" secondAttribute="trailing" constant="8" id="AX6-2G-PsE"/>
+                                    <constraint firstItem="qbJ-eK-wRB" firstAttribute="top" secondItem="0zo-Rz-ngy" secondAttribute="top" constant="8" id="SV1-nJ-6E3"/>
+                                    <constraint firstAttribute="height" constant="60" id="Vj3-eV-GW8"/>
+                                    <constraint firstAttribute="bottom" secondItem="qbJ-eK-wRB" secondAttribute="bottom" constant="8" id="Yn9-rW-Gtw"/>
+                                    <constraint firstItem="qbJ-eK-wRB" firstAttribute="leading" secondItem="0zo-Rz-ngy" secondAttribute="leading" constant="8" id="rqP-Hd-PLp"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="px9-5K-L8B" customClass="CustomImageView" customModule="ObjectRecognizer" customModuleProvider="target">
+                                <rect key="frame" x="319" y="588" width="75" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4ZP-wI-qAA"/>
+                                    <constraint firstAttribute="width" constant="75" id="k19-xH-9AE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVv-oV-nlT" customClass="CustomButton" customModule="ObjectRecognizer" customModuleProvider="target">
+                                <rect key="frame" x="20" y="686" width="100" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QqW-Ug-oYN"/>
+                                    <constraint firstAttribute="height" constant="30" id="wkf-7S-HRC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <state key="normal" title="闪光灯关"/>
+                                <connections>
+                                    <action selector="flashButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NKx-5E-lBh"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="a1k-vP-6Ft">
+                                <rect key="frame" x="346.66666666666669" y="642" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bVv-oV-nlT" secondAttribute="bottom" constant="20" id="9Jq-cL-jNJ"/>
+                            <constraint firstItem="0zo-Rz-ngy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9T5-ZO-WMn"/>
+                            <constraint firstItem="a1k-vP-6Ft" firstAttribute="centerX" secondItem="px9-5K-L8B" secondAttribute="centerX" id="9aj-CR-9ia"/>
+                            <constraint firstItem="0zo-Rz-ngy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="BKO-3K-SLH"/>
+                            <constraint firstItem="fg2-D2-xVC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NO0-Es-UDl"/>
+                            <constraint firstItem="fg2-D2-xVC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aKX-CK-wgr"/>
+                            <constraint firstItem="a1k-vP-6Ft" firstAttribute="centerY" secondItem="px9-5K-L8B" secondAttribute="centerY" id="aiU-fC-qXj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="px9-5K-L8B" secondAttribute="trailing" constant="20" id="azW-fy-ff3"/>
+                            <constraint firstItem="fg2-D2-xVC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jrr-lu-ZSe"/>
+                            <constraint firstItem="bVv-oV-nlT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nZJ-7B-QBS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0zo-Rz-ngy" secondAttribute="trailing" constant="20" id="oxo-BH-C12"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="px9-5K-L8B" secondAttribute="bottom" constant="20" id="vWB-jE-Lxd"/>
+                            <constraint firstItem="fg2-D2-xVC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wO6-de-P1o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="fg2-D2-xVC" id="tJg-GT-8ar"/>
+                        <outlet property="capturedImageView" destination="px9-5K-L8B" id="hG6-oz-VAj"/>
+                        <outlet property="confidenceLabel" destination="ebD-k1-qUB" id="gtL-1v-165"/>
+                        <outlet property="infoBackgroundView" destination="0zo-Rz-ngy" id="IIN-sF-mgx"/>
+                        <outlet property="objectNameLabel" destination="kos-OW-N0T" id="OcB-LU-eUU"/>
+                        <outlet property="spinner" destination="a1k-vP-6Ft" id="NI3-7h-mlN"/>
+                        <outlet property="toggleFlashButton" destination="bVv-oV-nlT" id="6J7-5U-oJC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
