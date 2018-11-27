@@ -16,9 +16,7 @@ public var fanyiString: String = ""
 
 
 class Translate {
-    
     func startTranslate(rawString: String) {
-        
         let manager = AFHTTPSessionManager()
         let url: String = "http://api.fanyi.baidu.com/api/trans/vip/translate"
         let q = rawString
@@ -39,11 +37,8 @@ class Translate {
                 let yiString = (aString as! NSDictionary)["dst"] as! String
                 fanyiString = yiString
             }           
-        }) { (operation,error) -> Void in
-            
-            print(error)
         }
-        
+        ) {(operation,error) -> Void in print(error)}
     }
 }
 

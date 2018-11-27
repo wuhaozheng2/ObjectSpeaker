@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76211800215CD24500CFF964 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 762117FF215CD24500CFF964 /* SqueezeNet.mlmodel */; };
+		76211800215CD24500CFF964 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 762117FF215CD24500CFF964 /* MobileNet.mlmodel */; };
 		76211802215D1E9E00CFF964 /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76211801215D1E9E00CFF964 /* Translate.swift */; };
 		76211804215D227900CFF964 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76211803215D227900CFF964 /* AFNetworking.framework */; };
 		76211805215D227900CFF964 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76211803215D227900CFF964 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -43,7 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		762117FF215CD24500CFF964 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		762117FF215CD24500CFF964 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 		76211801215D1E9E00CFF964 /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
 		76211803215D227900CFF964 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
 		76211807215D28AD00CFF964 /* md5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = md5.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		EBBC4D461F8A6B8E00536977 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				762117FF215CD24500CFF964 /* SqueezeNet.mlmodel */,
+				762117FF215CD24500CFF964 /* MobileNet.mlmodel */,
 				EB4EE39D1F8BF15100B361B5 /* 1 */,
 			);
 			path = Model;
@@ -243,7 +243,7 @@
 				EBBC4D351F8A680800536977 /* CameraVC.swift in Sources */,
 				76211808215D28AD00CFF964 /* md5.swift in Sources */,
 				EBBC4D331F8A680800536977 /* AppDelegate.swift in Sources */,
-				76211800215CD24500CFF964 /* SqueezeNet.mlmodel in Sources */,
+				76211800215CD24500CFF964 /* MobileNet.mlmodel in Sources */,
 				EBBC4D4C1F8A70A700536977 /* CustomImageView.swift in Sources */,
 				EB4EE3A11F8BFB9700B361B5 /* ProcessCapturedImageUsingCoreML.swift in Sources */,
 				EB4EE3A31F8BFC4900B361B5 /* SetupUIFunctionalities.swift in Sources */,
